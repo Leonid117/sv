@@ -697,11 +697,6 @@ footer .top_col .contact_form input.error {border: 1px solid #f71d1c !important;
     }
 }
 
-.social_icon:hover +.hide_div {
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
 
 
 
