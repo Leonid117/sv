@@ -181,8 +181,19 @@ header .wrapper{ position:relative;}
 .main_banner_area #curtain--bg { background: #0F1823;pointer-events: none;position: fixed;-webkit-transform: rotate(38deg);transform: rotate(38deg);-webkit-transform-origin: right top;transform-origin: right top;transition: top 1.5s, right 1.5s;height: 250vh;right: -250vh;top: -250vh;width: 250vh;z-index: 999;}
 .main_banner_area #curtain--bg.is_open {right: -100vh;top: 0;} 
 .main_banner_area .menu_ .brand {display: inline-block;vertical-align: top;}
-.main_banner_area .menu_.is_open{opacity: 1;visibility: visible;top: 0;right: 0;}
-.main_banner_area .menu_ .menu_wrapper {max-width: 489px;margin: 0 auto;position: relative;margin-top: 109px;}
+.main_banner_area .menu_.is_open {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+}
+.menu_.is_open {
+    z-index: 99999 !important;
+}
+.main_banner_area .menu_ .menu_wrapper {max-width: 489px;margin: 0 auto;position: relative;margin-top: 109px;
+
+}
 .main_banner_area .menu_ .close_btn {display: inline-block;vertical-align: top;position: absolute;left: -110px;top: 58px;}
 .main_banner_area .menu_ .menu_list {list-style: none;margin-top: 93px;}
 .main_banner_area .menu_ .menu_list li{max-width: 430px;margin: 0 auto;}
