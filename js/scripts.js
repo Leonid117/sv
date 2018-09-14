@@ -250,11 +250,11 @@ $(document).ready(function () {
             var $d = $children.not(".colored");
             var $el = $d.eq(Math.floor(Math.random() * $d.length));
             $el.addClass('colored');
-            setTimeout(function() { $el.removeClass('colored')}, 3500 );
+            setTimeout(function() { $el.removeClass('colored')}, 1500 );
             if ($d.length == 1) {
                 clearInterval(interval);
             }
-        }, Math.floor((Math.random() * 125) + 5000));
+        }, Math.floor((Math.random() * 125) + 2000));
     }
     $(window).load(timer);
     
@@ -263,7 +263,7 @@ $(document).ready(function () {
         clearInterval(interval);
         setTimeout(function(){
             timer()
-        },900)
+        },300)
     });
 });
 
