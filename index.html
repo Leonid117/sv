@@ -757,7 +757,7 @@
     <script src="js/scripts.js"></script>
     <script>
         $('.technology .right_col .inner').height($('.technology .right_col').height())
-        if ($(window).width() > 768) {
+        if ($(window).width() > 960) {
 
             $('.bg').stellar();
 
@@ -779,7 +779,7 @@
         })
 
         function owl() {
-            if ($(window).width() <= 767) {
+            if ($(window).width() <= 959) {
                 if ($(".col_list").hasClass("owl-carousel")) {
                     return false;
                 }
@@ -795,6 +795,7 @@
                         nav: false,
                         center: true,
                         autoWidth: true,
+                        dots:false
                     });
                 }
 
@@ -813,7 +814,7 @@
         $(window).load(owl);
 
 
-        if (jQuery(window).width() < 769) {
+        if (jQuery(window).width() < 961) {
             jQuery('.serivces_content').addClass('owl-carousel');
             jQuery('.serivces_content.owl-carousel').owlCarousel({
                 loop: true,
