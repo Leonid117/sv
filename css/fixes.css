@@ -215,23 +215,22 @@
     .platform .platform_content .pcol.pcol_1 .hide_div:after{
         right: 40px;
     }
+    .s_col1{
 
+    }
+    .s_col2{
 
+    }
+    .s_col3{
 
+    }
+    .s_col4{
 
+    }
 
-
-
-
-
-    /*.platform .platform_content .pcol.pcol_1 .hide_div{*/
-        /*right: -29px;*/
-        /*top: 60px;*/
-        /*max-width: 190px;*/
-    /*}*/
-
-
-
-
-
+}
+@media (max-width: 425px) {
+    .services .inner .serivces_content .s_col {
+        max-width: 90%;
+    }
 }

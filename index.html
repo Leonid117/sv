@@ -237,7 +237,7 @@
                 <div class="inner">
                     <h2>שירותים</h2>
                     <div class="serivces_content cf">
-                        <div class="s_col cf">
+                        <div class="s_col s_col1 cf">
                             <a href="javascript:void(0)">
                                 <img src="images/site/developing.png" alt="">
                                 <p>פיתוח</p>
@@ -249,7 +249,7 @@
                                 </ul>
                             </a>
                         </div>
-                        <div class="s_col cf">
+                        <div class="s_col s_col2 cf">
                             <a href="javascript:void(0)">
                                 <img src="images/site/content.png" alt="">
                                 <p>תוכן</p>
@@ -261,7 +261,7 @@
                                 </ul>
                             </a>
                         </div>
-                        <div class="s_col cf">
+                        <div class="s_col s_col3 cf">
                             <a href="javascript:void(0)">
                                 <img src="images/site/design.png" alt="">
                                 <p>עיצוב</p>
@@ -273,7 +273,7 @@
                                 </ul>
                             </a>
                         </div>
-                        <div class="s_col cf">
+                        <div class="s_col s_col4 cf">
                             <a href="javascript:void(0)">
                                 <img src="images/site/construction.png" alt="">
                                 <p>תכנון וניהול קמפיין</p>
@@ -815,6 +815,7 @@
         $(window).load(owl);
 
 
+        window.onload = function() {
         if (jQuery(window).width() <= 1024) {
             jQuery('.serivces_content').addClass('owl-carousel');
             jQuery('.serivces_content.owl-carousel').owlCarousel({
@@ -823,13 +824,14 @@
                 items: 1,
                 responsiveClass: true,
                 rtl: true,
-                nav: false,
-                center: true,
                 dots: true,
+                autoHeight : true,
+
                 nav: true
 
             });
         }
+        };
 
         /* Menu  */
         jQuery('.main_banner_area .banner_detail .menu_btn ,.who_ .hat .menu_btn').click(function () {
