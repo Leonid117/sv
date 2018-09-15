@@ -780,7 +780,7 @@
         })
 
         function owl() {
-            if ($(window).width() <= 959) {
+            if ($(window).width() <= 1024) {
                 if ($(".col_list").hasClass("owl-carousel")) {
                     return false;
                 }
@@ -815,7 +815,7 @@
         $(window).load(owl);
 
 
-        if (jQuery(window).width() < 961) {
+        if (jQuery(window).width() <= 1024) {
             jQuery('.serivces_content').addClass('owl-carousel');
             jQuery('.serivces_content.owl-carousel').owlCarousel({
                 loop: true,
